@@ -285,7 +285,14 @@ class Boundaries(object):
 
 class Titration :
     """ class containing the span of equivalents applied to the system,
-        and the global optimisation routines"""
+        and the global optimisation routines
+            - system : A system object as defined by the System class
+            
+            - eqspan : an array containing the different points of the titration
+                       in terms of equivalents
+            - exp    : 2d array containing the uv-vis spectra, one uv-vis spectrum per column.
+            
+    """
     def __init__(self, system, eqspan, exp):
         self.system      = system
         self.eqspan      = eqspan

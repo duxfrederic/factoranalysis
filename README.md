@@ -1,3 +1,11 @@
+## If you are a chemist looking for a code base to fit your titrations
+Use this: https://github.com/duxfrederic/titration-fitting
+
+It is a cleaned-up version of this repository, with better tutorials. (it was used, e.g., in this publication: https://www.mdpi.com/2624-8549/4/1/2 )
+
+
+## old
+
 This repository implements a simulation of a titration, for a system of two main components,
 $N​$ species and $N-1$ equilibrium constants. Some species (composed of a combination of a metal (M) and of a ligand (L), with a given or unknown UV-VIS spectrum) are contained in a flask. More of a solution of a ligand or of the metal (the titrating agent, or titrant) is added to the flask, modifying the concentrations of the species depending on the metal/ligand concentrations ratio.  The UV-VIS spectra are recorded experimentally at each step of the titration, and the routines contained in this script try to obtain a best fit of the data by finding the equilibrium constants that will describe best the concentrations of the species. If the UV-VIS spectra of a given species is not known, its values will be added to the variables to be optimized.
 
